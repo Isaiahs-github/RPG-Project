@@ -4094,8 +4094,9 @@ GameObject:
   - component: {fileID: 924210176}
   - component: {fileID: 924210175}
   - component: {fileID: 924210174}
-  - component: {fileID: 924210173}
   - component: {fileID: 924210180}
+  - component: {fileID: 924210181}
+  - component: {fileID: 924210173}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -4112,9 +4113,17 @@ MonoBehaviour:
   m_GameObject: {fileID: 924210172}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 86a3358318a6a8a438083af3839bcd95, type: 3}
+  m_Script: {fileID: 11500000, guid: 4dc195bb356c8aa488dbbeab899cef6c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  replaceableAttackAnim: {fileID: 7549088838577149333, guid: 31a5772f521b5f542b41284200aad136, type: 3}
+  defaultAttackAnimSet:
+  - {fileID: 7549088838577149333, guid: 31a5772f521b5f542b41284200aad136, type: 3}
+  weaponAnimations:
+  - weapon: {fileID: 11400000, guid: 22df4da8a1b6aeb4599d3ca6976d9a7c, type: 2}
+    clips:
+    - {fileID: -7795385134082868115, guid: 31a5772f521b5f542b41284200aad136, type: 3}
+    - {fileID: -3699909073461682349, guid: 31a5772f521b5f542b41284200aad136, type: 3}
 --- !u!114 &924210174
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4227,6 +4236,20 @@ MonoBehaviour:
     baseValue: 5
   armor:
     baseValue: 0
+--- !u!114 &924210181
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 924210172}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 87d3b52d335121d4f8669503a22186d1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  attackSpeed: 1
+  attackDelay: 0.6
 --- !u!1 &927670790
 GameObject:
   m_ObjectHideFlags: 0
@@ -9435,7 +9458,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2064886062}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -13.912, y: -5.847, z: -5.07}
+  m_LocalPosition: {x: -15.87, y: -5.847, z: -5.07}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1010390955}
@@ -9454,7 +9477,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 93bdbeec299c7444685a98a0715acc65, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 40
+  maxHealth: 100
   damage:
     baseValue: 5
   armor:
@@ -9471,7 +9494,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 88996e2c6de8ebe459cbbb294460f038, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  radius: 4
+  radius: 3
   interactionTransform: {fileID: 2064886067}
 --- !u!114 &2064886070
 MonoBehaviour:
