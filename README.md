@@ -1,3 +1,3 @@
 # RPG-Project
-A RPG project test. 
+A RPG project in unity. 
 
