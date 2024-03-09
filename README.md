@@ -1,4 +1,3 @@
 # RPG-Project
-A RPG project test. Second game created following Brackey's "RPG GUIDE". First Git Test. 
+A RPG project test. 
 
-Git With Unity Super Usful! 
